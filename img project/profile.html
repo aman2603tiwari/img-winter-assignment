@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .welcome{
+        /* display: flex; */
+        /* justify-content: center; */
+        align-items: center;
+        /* margin-left: 30%; */
+        /* background-color: black; */
+        color:antiquewhite;
+        text-align: center;
+
+    }
+    .profile{
+        width: 20%;
+        justify-content: center;
+        /* align-items: center; */
+        /* margin-left: 30%; */
+        height: 30vh;
+    }
+    .logout {
+        /* margin-left:35%; */
+        text-align: center;
+        margin-top: 5px;
+        font-size: 10px;  
+    }
+    .logout button{
+        padding:10px 19px;
+        background-color: cornflowerblue;
+    }
+    .back-home{
+        text-align: center;
+        margin-top: 5px;
+        font-size: 10px; 
+    }
+    .back-home button{
+        padding:10px 19px;
+        background-color: #ff00cc;
+    }
+</style>
+<body>
+    <div class="welcome">
+        <h1>
+            Welcome to CineFind
+        </h1>
+        <h2 id="name"></h2>
+        <img class="profile" id="image"/>
+</div>
+    <div class="logout">
+        <button onclick="logout()">Logout</button>
+    </div>
+    <div class="back-home">
+        <button><a href="project.html">BACK TO HOME</a></button>
+    </div>
+
+</body>
+<script>
+    let params ={}
+    let regex = /([^&=]+)=([^&]*)/g, m
+    while (m =regex.exec(location.href)) {
+        params[decodeURIComponent(m[1])] = decodeURIComponent(m[2])
+    }
+    if(Object.keys(params).length>0){
+        localStorage.setItem('authInfo',JSON.stringify(params))
+
+    }
+
+    window.history.pushState({},document.title,"/"+"profile.html")
+    let info = JSON.parse(localStorage.getItem('authInfo'))
+    console.log(JSON.parse(localStorage.getItem('authInfo')))
+    console.log(info['access_token'])
+    console.log(info['expires_in'])
+
+    fetch("https://www.googleapis.com/oauth2/v3/userinfo",{
+        headers:{
+            "Authorization":`Bearer ${info['access_token']}`
+        }
+    })
+    .then((data)=> data.json())
+    .then((info)=>{
+        console.log(info)
+        document.getElementById('name').innerHTML += info.name
+        document.getElementById('image').setAttribute('src',info.picture)
+    })
+    function logout() {
+        fetch("https://oauth2.googleapis.com/revoke?token=" + info['access_token'],{
+            method:'POST',
+            headers:{
+                'Content-type':'application/x-www-form-urlencoded'
+            }
+        })
+        .then((data)=>{
+            location.href="http://127.0.0.1:5500/project.html"
+        })
+    }
+</script>
+</html>

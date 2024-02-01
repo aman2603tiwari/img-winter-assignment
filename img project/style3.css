@@ -1,0 +1,106 @@
+body{
+    background-color: #f2e6e6;
+    margin-left: 1%;
+}
+.container{
+    display: flex;
+}
+.movie-poster img{
+    flex:0.9;
+    width: 90%;
+    height: 95vh;
+    /* padding: 50px; */
+}
+
+.featured-title{
+    width:300px;
+}
+
+.featured-button{
+    background-color:red;
+    color:rgb(11, 29, 8);
+    padding:15px 15px;
+    border-radius: 8px;
+    border:none;
+    outline:none;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top:40px;
+    position: relative;
+}
+.featured-button a{
+    text-decoration: none;
+    color:rgb(11, 29, 8);
+}
+.featured-button:hover{
+    text-decoration:underline ;
+
+}
+.movie-info{
+    width:50%;
+    margin-left:0px
+}
+.movie-title{
+    color:red;
+    /* display: inline-block; */
+    
+}
+.overview{
+    color:red;
+}
+.featured-desc{
+    width:100%;
+    color:rgb(11, 29, 8);
+    margin:25px 0;
+}
+.genre{
+    color:rgb(11, 29, 8);
+    /* margin-left: 0px; */
+    margin-bottom: 20px;
+}
+.details{
+    display:flex;
+    color:rgb(11, 29, 8);
+    /* margin-left: 0px; */
+    margin-right: 60vh;
+    /* margin-right: 150px; */
+    /* padding:20px 20px; */
+    justify-content: flex-start;
+    align-items: left;
+}
+.deatils h4{
+    flex:1;
+    /* font-family:'Roboto',sans-serif; */
+    /* justify-content: flex-start; */
+    /* margin-right: -auto; */
+
+}
+.details h4 span{
+    font-family:'Roboto',sans-serif;
+}
+.details h3{
+    flex:1;
+    font-family:'Roboto',sans-serif;
+    
+}
+.languages{
+    /* margin-left: 20px; */
+    color:rgb(11, 29, 8);
+}
+.languages span{
+    color: red;
+    font-weight: bold;
+}
+.languages ul{
+    display:flex;
+    margin-left: -60px;
+}
+.languages ul li{
+    flex:2;
+    list-style: none;
+    margin-left:25px;
+}
+.reviews{
+    margin-left: 10px;
+    color: rgb(11, 29, 8);
+}

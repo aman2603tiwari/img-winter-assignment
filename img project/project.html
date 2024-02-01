@@ -1,0 +1,1258 @@
+
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100;1,300;1,400;1,500&family=Sen:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="img/fly.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"> -->
+    <title>Movie Websitee</title>
+</head>
+<body>
+    <div class="loader-wrapper">
+        <span class="loader">WELCOME TO CINEFLY</span>
+    </div>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container"><h1 class="logo"><strong>CINEFLY</strong></h1></div>
+            <div class="menu-container">
+                <div class="select">
+                    <label for="question"><strong>Menu</strong></label>
+                    <select name="question" id="question" placeholder="Select">
+                        <option value="q1">Home</option>
+                        <!-- <option value="q2">Movies</option> -->
+                        <option value="q3"><button onclick="signIn()">Login</button></option>
+                        <!-- <option value="q4">Popular</option> -->
+                        <option value="q4"><button onclick= "func()" ><i class="left-menu-icon fa-solid fa-magnifying-glass"></i>search</button></option>
+                        
+                    </select>
+                </div>
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <!-- <li class="menu-list-item">Movies</li> -->
+                    <li class="menu-list-item"><button onclick="signIn()">Login</button></li>
+                    <!-- <li class="menu-list-item">Popular</li> -->
+                    <li class="menu-list-item"><button onclick= "func()" ><i class="left-menu-icon fa-solid fa-magnifying-glass"></i></button></li>
+                </ul>
+                                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Filters
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+
+                        <li class="dropdown-submenu">
+                            <a class="test" tabindex="-1" href="#">Genre<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a class="test" href="#">Crime<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="moviepage.html">Movie 1</a></li>
+                                        <li><a href="#">Movie 2</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-submenu">
+                                    <a class="test" href="#">Thriller<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Movie 1</a></li>
+                                        <li><a href="#">Movie 2</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-submenu">
+                                    <a class="test" href="#">Romance<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href=" Casablanca.html"> Casablanca</a></li>
+                                        <li><a href="Gone with the Wind.html">Gone with the Wind</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-submenu" class="dropdown-submenu">
+                                    <a class="test" href="">Drama<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="The Godfather.html">The Godfather</a></li>
+                                        <li><a href="The Shawshank Redemption.html">The Shawshank Redemption</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>    
+                        <li class="dropdown-submenu">
+                            <a class="test" tabindex="-1" href="#">Rating<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a class="test" href="#">>4.5<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Movie 1</a></li>
+                                        <li><a href="#">Movie 2</a></li>
+                                    </ul>
+
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="test" href="#">4-4.5<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Movie 1</a></li>
+                                        <li><a href="#">Movie 2</a></li>
+                                    </ul>
+
+                                </li>
+
+                                <li class="dropdown-submenu">
+                                    <a class="test" href="#">3.5-4<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Movie 1</a></li>
+                                        <li><a href="#">Movie 2</a></li>
+                                    </ul>
+
+                                </li>
+
+                                <li class="dropdown-submenu">
+                                    <a class="test" href="#">3-3.5<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Movie 1</a></li>
+                                        <li><a href="#">Movie 2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>    
+                        
+                    </ul>
+                </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="img/profile.jpg" alt=""></img>
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fa-solid fa-sort-down"></i>
+                </div>
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-regular fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="sidebar">
+        <button onclick= "func()" ><i class="left-menu-icon fa-solid fa-magnifying-glass"></i></button>
+        <i class="left-menu-icon fa-solid fa-house-user"></i>
+        <i class="left-menu-icon fa-solid fa-user-large"></i>
+        <i class="left-menu-icon fa-solid fa-bookmark"></i>
+        <i class="left-menu-icon fa-solid fa-tv"></i>
+        <i class="left-menu-icon fa-solid fa-hourglass-half"></i> -->
+        <!-- <i class="left-menu-icon fa-solid fa-cart-shopping"></i> -->
+    <!-- </div> -->
+    <div class="container">
+        <div class="searchBox" id="searchBox">
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Search here..." autocomplete="off">
+                <!-- <button> <i class="left-menu-icon fa-solid fa-magnifying-glass"></i></button> -->
+                
+            </div>
+            <div class="result-box">
+                <ul>
+                   
+        <li class="searchlist-item"><a href="Rang De Basanti.html">Rang De Basanti</a></li>
+        <li class="searchlist-item"><a href="3 Idiots.html">3 Idiots</a></li>
+        <li class="searchlist-item"><a href="Taare Zameen Par.html">Taare Zameen Par</a></li>
+        <li class="searchlist-item"><a href="Dil Chahta Hai.html">Dil Chahta Hai</a></li>
+        <li class="searchlist-item"><a href="Swades: We, the People.html">Swades: We, the People</a></li>
+        <li class="searchlist-item"><a href="Lagaan: Once Upon a Time in India.html">Lagaan: Once Upon a Time in India</a></li>
+        <li class="searchlist-item"><a href="Gangs of Wasseypur.html">Gangs of Wasseypur</a></li>
+        <li class="searchlist-item"><a href="Barfi!.html">Barfi!</a></li>
+        <li class="searchlist-item"><a href="Anand.html">Anand</a></li>
+        <li class="searchlist-item"><a href="Munna Bhai M.B.B.S..html">Munna Bhai M.B.B.S.</a></li>
+        <li class="searchlist-item"><a href="A Wednesday.html">A Wednesday</a></li>
+        <li class="searchlist-item"><a href="Andaz Apna Apna.html">Andaz Apna Apna</a></li>
+        <li class="searchlist-item"><a href="Sholay.html">Sholay</a></li>
+        <li class="searchlist-item"><a href="Bhaag Milkha Bhaag.html">Bhaag Milkha Bhaag</a></li>
+        <li class="searchlist-item"><a href="Hera Pheri.html">Hera Pheri</a></li>
+        <li class="searchlist-item"><a href="Udaan.html">Udaan</a></li>
+        <li class="searchlist-item"><a href="Kahaani.html">Kahaani</a></li>
+        <li class="searchlist-item"><a href="Black.html">Black</a></li>
+        <li class="searchlist-item"><a href="Chak De! India.html">Chak De! India</a></li>
+        <li class="searchlist-item"><a href="Khosla Ka Ghosla!.html">Khosla Ka Ghosla!</a></li>
+        <li class="searchlist-item"><a href="Jo Jeeta Wohi Sikandar.html">Jo Jeeta Wohi Sikandar</a></li>
+        <li class="searchlist-item"><a href="Zindagi Na Milegi Dobara.html">Zindagi Na Milegi Dobara</a></li>
+        <li class="searchlist-item"><a href="Paan Singh Tomar.html">Paan Singh Tomar</a></li>
+        <li class="searchlist-item"><a href="Dilwale Dulhania Le Jayenge.html">Dilwale Dulhania Le Jayenge</a></li>
+        <li class="searchlist-item"><a href="Omkara.html">Omkara</a></li>
+        <li class="searchlist-item"><a href="Lage Raho Munna Bhai.html">Lage Raho Munna Bhai</a></li>
+        <li class="searchlist-item"><a href="Iqbal.html">Iqbal</a></li>
+        <li class="searchlist-item"><a href="The Lunchbox.html">The Lunchbox</a></li>
+        <li class="searchlist-item"><a href="Black Friday.html">Black Friday</a></li>
+        <li class="searchlist-item"><a href="Company.html">Company</a></li>
+        <li class="searchlist-item"><a href="Gol Maal.html">Gol Maal</a></li>
+        <li class="searchlist-item"><a href="Dev.D.html">Dev.D</a></li>
+        <li class="searchlist-item"><a href="Jaane Bhi Do Yaaro.html">Jaane Bhi Do Yaaro</a></li>
+        <li class="searchlist-item"><a href="OMG: Oh My God!.html">OMG: Oh My God!</a></li>
+        <li class="searchlist-item"><a href="Mughal-E-Azam.html">Mughal-E-Azam</a></li>
+        <li class="searchlist-item"><a href="Gulaal.html">Gulaal</a></li>
+        <li class="searchlist-item"><a href="Dor.html">Dor</a></li>
+        <li class="searchlist-item"><a href="Jab We Met.html">Jab We Met</a></li>
+        <li class="searchlist-item"><a href="Pyaasa.html">Pyaasa</a></li>
+        <li class="searchlist-item"><a href="The Legend of Bhagat Singh.html">The Legend of Bhagat Singh</a></li>
+        <li class="searchlist-item"><a href="Masoom.html">Masoom</a></li>
+        <li class="searchlist-item"><a href="Salaam Bombay!.html">Salaam Bombay!</a></li>
+        <li class="searchlist-item"><a href="Satya.html">Satya</a></li>
+        <li class="searchlist-item"><a href="Vicky Donor.html">Vicky Donor</a></li>
+        <li class="searchlist-item"><a href="Lakshya.html">Lakshya</a></li>
+        <li class="searchlist-item"><a href="Vaastav: The Reality.html">Vaastav: The Reality</a></li>
+        <li class="searchlist-item"><a href="Kal Ho Naa Ho.html">Kal Ho Naa Ho</a></li>
+        <li class="searchlist-item"><a href="Oye Lucky! Lucky Oye!.html">Oye Lucky! Lucky Oye!</a></li>
+        <li class="searchlist-item"><a href="Sarfarosh.html">Sarfarosh</a></li>
+        <li class="searchlist-item"><a href="Gangaajal.html">Gangaajal</a></li>
+        <li class="searchlist-item"><a href="The Godfather.html">The Godfather</a></li>
+        <li class="searchlist-item"><a href="The Shawshank Redemption.html">The Shawshank Redemption</a></li>
+        <li class="searchlist-item"><a href="Schindler's List.html">Schindler's List</a></li>
+        <li class="searchlist-item"><a href="Raging Bull.html">Raging Bull</a></li>
+        <li class="searchlist-item"><a href="Casablanca.html">Casablanca</a></li>
+        <li class="searchlist-item"><a href="Citizen Kane.html">Citizen Kane</a></li>
+        <li class="searchlist-item"><a href="Gone with the Wind.html">Gone with the Wind</a></li>
+        <li class="searchlist-item"><a href="The Wizard of Oz.html">The Wizard of Oz</a></li>
+        <li class="searchlist-item"><a href="One Flew Over the Cuckoo's Nest.html">One Flew Over the Cuckoo's Nest</a></li>
+        <li class="searchlist-item"><a href="Lawrence of Arabia.html">Lawrence of Arabia</a></li>
+        <li class="searchlist-item"><a href="Vertigo.html">Vertigo</a></li>
+        <li class="searchlist-item"><a href="Psycho.html">Psycho</a></li>
+        <li class="searchlist-item"><a href="The Godfather Part II.html">The Godfather Part II</a></li>
+        <li class="searchlist-item"><a href="On the Waterfront.html">On the Waterfront</a></li>
+        <li class="searchlist-item"><a href="Sunset Blvd..html">Sunset Blvd.</a></li>
+        <li class="searchlist-item"><a href="Forrest Gump.html">Forrest Gump</a></li>
+        <li class="searchlist-item"><a href="The Sound of Music.html">The Sound of Music</a></li>
+        <li class="searchlist-item"><a href="12 Angry Men.html">12 Angry Men</a></li>
+        <li class="searchlist-item"><a href="West Side Story.html">West Side Story</a></li>
+        <li class="searchlist-item"><a href="Star Wars.html">Star Wars</a></li>
+        <li class="searchlist-item"><a href="2001: A Space Odyssey.html">2001: A Space Odyssey</a></li>
+        <li class="searchlist-item"><a href="E.T. the Extra-Terrestrial.html">E.T. the Extra-Terrestrial</a></li>
+        <li class="searchlist-item"><a href="The Silence of the Lambs.html">The Silence of the Lambs</a></li>
+        <li class="searchlist-item"><a href="Chinatown.html">Chinatown</a></li>
+        <li class="searchlist-item"><a href="The Bridge on the River Kwai.html">The Bridge on the River Kwai</a></li>
+        <li class="searchlist-item"><a href="Singin' in the Rain.html">Singin' in the Rain</a></li>
+        <li class="searchlist-item"><a href="It's a Wonderful Life.html">It's a Wonderful Life</a></li>
+        <li class="searchlist-item"><a href="Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb.html">Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb</a></li>
+        <li class="searchlist-item"><a href="Some Like It Hot.html">Some Like It Hot</a></li>
+        <li class="searchlist-item"><a href="Ben-Hur.html">Ben-Hur</a></li>
+        <li class="searchlist-item"><a href="Apocalypse Now.html">Apocalypse Now</a></li>
+        <li class="searchlist-item"><a href="Amadeus.html">Amadeus</a></li>
+        <li class="searchlist-item"><a href="The Lord of the Rings: The Return of the King.html">The Lord of the Rings: The Return of the King</a></li>
+        <li class="searchlist-item"><a href="Gladiator.html">Gladiator</a></li>
+        <li class="searchlist-item"><a href="Titanic.html">Titanic</a></li>
+        <li class="searchlist-item"><a href="From Here to Eternity.html">From Here to Eternity</a></li>
+        <li class="searchlist-item"><a href="Saving Private Ryan.html">Saving Private Ryan</a></li>
+        <li class="searchlist-item"><a href="Unforgiven.html">Unforgiven</a></li>
+        <li class="searchlist-item"><a href="Raiders of the Lost Ark.html">Raiders of the Lost Ark</a></li>
+        <li class="searchlist-item"><a href="Rocky.html">Rocky</a></li>
+        <li class="searchlist-item"><a href="A Streetcar Named Desire.html">A Streetcar Named Desire</a></li>
+        <li class="searchlist-item"><a href="The Philadelphia Story.html">The Philadelphia Story</a></li>
+        <li class="searchlist-item"><a href="To Kill a Mockingbird.html">To Kill a Mockingbird</a></li>
+        <li class="searchlist-item"><a href="An American in Paris.html">An American in Paris</a></li>
+        <li class="searchlist-item"><a href="The Best Years of Our Lives.html">The Best Years of Our Lives</a></li>
+        <li class="searchlist-item"><a href="My Fair Lady.html">My Fair Lady</a></li>
+        <li class="searchlist-item"><a href="A Clockwork Orange.html">A Clockwork Orange</a></li>
+        <li class="searchlist-item"><a href="Doctor Zhivago.html">Doctor Zhivago</a></li>
+        <li class="searchlist-item"><a href="The Searchers.html">The Searchers</a></li>
+        <li class="searchlist-item"><a href="Jaws.html">Jaws</a></li>
+        <li class="searchlist-item"><a href="Breaking Bad.html">Breaking Bad</a></li>
+        <li class="searchlist-item"><a href="Game of Thrones.html">Game of Thrones</a></li>
+        <li class="searchlist-item"><a href="The Mandalorian.html">The Mandalorian</a></li>
+        <li class="searchlist-item"><a href="Friends.html">Friends</a></li>
+        <li class="searchlist-item"><a href="The Sopranos.html">The Sopranos</a></li>
+        <li class="searchlist-item"><a href="The Wonder Years.html">The Wonder Years</a></li>
+        <li class="searchlist-item"><a href="Seinfeld.html">Seinfeld</a></li>
+        <li class="searchlist-item"><a href="House of Cards.html">House of Cards</a></li>
+        <li class="searchlist-item"><a href="Lost.html">Lost</a></li>
+        <li class="searchlist-item"><a href="Westworld.html">Westworld</a></li>
+        <li class="searchlist-item"><a href="Stranger Things.html">Stranger Things</a></li>
+        <li class="searchlist-item"><a href="The X Files.html">The X Files</a></li>
+        <li class="searchlist-item"><a href="Chernobyl.html">Chernobyl</a></li>
+        <li class="searchlist-item"><a href="Better Call Saul.html">Better Call Saul</a></li>
+        <li class="searchlist-item"><a href="Narcos.html">Narcos</a></li>
+        <li class="searchlist-item"><a href="Family Guy.html">Family Guy</a></li>
+        <li class="searchlist-item"><a href="Parks and Recreation.html">Parks and Recreation</a></li>
+        <li class="searchlist-item"><a href="The Simpsons.html">The Simpsons</a></li>
+        <li class="searchlist-item"><a href="The Wire.html">The Wire</a></li>
+        <li class="searchlist-item"><a href="Rome.html">Rome</a></li>
+        <li class="searchlist-item"><a href="Rick and Morty.html">Rick and Morty</a></li>
+        <li class="searchlist-item"><a href="Homeland.html">Homeland</a></li>
+        <li class="searchlist-item"><a href="Band of Brothers.html">Band of Brothers</a></li>
+        <li class="searchlist-item"><a href="Vikings.html">Vikings</a></li>
+        <li class="searchlist-item"><a href="The Boys.html">The Boys</a></li>
+        <li class="searchlist-item"><a href="The Good Place.html">The Good Place</a></li>
+        <li class="searchlist-item"><a href="24.html">24</a></li>
+        <li class="searchlist-item"><a href="Two and a Half Men.html">Two and a Half Men</a></li>
+        <li class="searchlist-item"><a href="X-Men.html">X-Men</a></li>
+        <li class="searchlist-item"><a href="Legion.html">Legion</a></li>
+        <li class="searchlist-item"><a href="American Crime Story.html">American Crime Story</a></li>
+        <li class="searchlist-item"><a href="Dexter.html">Dexter</a></li>
+        <li class="searchlist-item"><a href="The Walking Dead.html">The Walking Dead</a></li>
+        <li class="searchlist-item"><a href="Ted Lasso.html">Ted Lasso</a></li>
+        <li class="searchlist-item"><a href="The Handmaid's Tale.html">The Handmaid's Tale</a></li>
+        <li class="searchlist-item"><a href="True Detective.html">True Detective</a></li>
+        <li class="searchlist-item"><a href="Brooklyn Nine-Nine.html">Brooklyn Nine-Nine</a></li>
+        <li class="searchlist-item"><a href="Bob's Burgers.html">Bob's Burgers</a></li>
+        <li class="searchlist-item"><a href="The Umbrella Academy.html">The Umbrella Academy</a></li>
+        <li class="searchlist-item"><a href="Mr. Robot.html">Mr. Robot</a></li>
+        <li class="searchlist-item"><a href="Boardwalk Empire.html">Boardwalk Empire</a></li>
+        <li class="searchlist-item"><a href="Star Trek: The Next Generation.html">Star Trek: The Next Generation</a></li>
+        <li class="searchlist-item"><a href="Scooby Doo, Where Are You!.html">Scooby Doo, Where Are You!</a></li>
+        <li class="searchlist-item"><a href="Daredevil.html">Daredevil</a></li>
+        <li class="searchlist-item"><a href="Prison Break.html">Prison Break</a></li>
+        <li class="searchlist-item"><a href="House M.D..html">House M.D.</a></li>
+        <li class="searchlist-item"><a href="ER.html">ER</a></li>
+        <li class="searchlist-item"><a href="The Big Bang Theory.html">The Big Bang Theory</a></li>
+        <li class="searchlist-item"><a href="South Park.html">South Park</a></li>
+        <li class="searchlist-item"><a href="Fargo.html">Fargo</a></li>
+                </ul>
+            </div>
+            
+            
+        </div>
+        <div class="content-container">
+            <div class="featured-content" style="background:linear-gradient(to bottom,rgba(0,0,0,0) , #04033c), url('img/salaar.jpg');">
+                <p class="featured-desc">Lion, Cheetah, Tiger, Elephant very very dangerous. But…. Not in Jurassic Park.</p>
+                    <button class="featured-button"><a href="https://www.youtube.com/watch?v=Pr2jBvbiy04">WATCH TRAILER!</a></button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">BOLLYWOOD</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list"> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYThmZDA0YmQtMWJhNy00MDQwLTk0Y2YtMDhmZTE5ZjhlNjliXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY209_CR3,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Rang De Basanti</span>
+                            <p class="movie-list-item-desc">
+The story of six young Indians who assist an English woman to film a documentary on the freedom fighters from their past, and the events that lead them to relive the long-forgotten saga of freedom.</p>
+                            <button class="movie-list-item-button"><a href="Rang De Basanti.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNTkyOGVjMGEtNmQzZi00NzFlLTlhOWQtODYyMDc2ZGJmYzFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY209_CR2,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">3 Idiots</span>
+                            <p class="movie-list-item-desc">
+Two friends are searching for their long lost companion. They revisit their college days and recall the memories of their friend who inspired them to think differently, even as the rest of the world called them "idiots".</p>
+                            <button class="movie-list-item-button"><a href="3 Idiots.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYjY0MGU3MmQtMGVhOS00M2IyLWI1MTktZGUxMzBjMTE5ZDA3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY209_CR2,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Taare Zameen Par</span>
+                            <p class="movie-list-item-desc">
+An eight-year-old boy is thought to be a lazy trouble-maker, until the new art teacher has the patience and compassion to discover the real problem behind his struggles in school.</p>
+                            <button class="movie-list-item-button"><a href="Taare Zameen Par.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMjRjMTYwMTYtMmRkNi00MmVkLWE0MjQtNmM3YjI0NWFhZDNmXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Dil Chahta Hai</span>
+                            <p class="movie-list-item-desc">
+Three inseparable childhood friends are just out of college. Nothing comes between them - until they each fall in love, and their wildly different approaches to relationships creates tension.</p>
+                            <button class="movie-list-item-button"><a href="Dil Chahta Hai.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BODY2NGYxZTEtMzBiOS00Zjg2LWEyZjYtNjQ5Mjg1MzQ5N2FlXkEyXkFqcGdeQXVyNTE0MDc0NTM@._V1_UY209_CR2,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Swades: We, the People</span>
+                            <p class="movie-list-item-desc">
+A successful Indian scientist returns to an Indian village to take his nanny to America with him and in the process rediscovers his roots.</p>
+                            <button class="movie-list-item-button"><a href="Swades: We, the People.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNDYxNWUzZmYtOGQxMC00MTdkLTkxOTctYzkyOGIwNWQxZjhmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Lagaan: Once Upon a Time in India</span>
+                            <p class="movie-list-item-desc">
+The people of a small village in Victorian India stake their future on a game of cricket against their ruthless British rulers.</p>
+                            <button class="movie-list-item-button"><a href="Lagaan: Once Upon a Time in India.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMTc5NjY4MjUwNF5BMl5BanBnXkFtZTgwODM3NzM5MzE@._V1_UY209_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Gangs of Wasseypur</span>
+                            <p class="movie-list-item-desc">
+A clash between Sultan and Shahid Khan leads to the expulsion of Khan from Wasseypur, and ignites a deadly blood feud spanning three generations.</p>
+                            <button class="movie-list-item-button"><a href="Gangs of Wasseypur.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMTQzMTEyODY2Ml5BMl5BanBnXkFtZTgwMjA0MDUyMjE@._V1_UY209_CR2,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Barfi!</span>
+                            <p class="movie-list-item-desc">
+Three young people learn that love can neither be defined nor contained by society's definition of normal and abnormal.</p>
+                            <button class="movie-list-item-button"><a href="Barfi!.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMzI4MjcxNGMtZmY1Zi00ZGU5LTk4MDMtNTljMDJmYTNjZjcxXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Anand</span>
+                            <p class="movie-list-item-desc">
+The story of a terminally ill man who wishes to live life to the fullest before the inevitable occurs, as told by his best friend.</p>
+                            <button class="movie-list-item-button"><a href="Anand.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMzJhMjI0ZmYtZTQ3My00YTliLWE4ZmMtMjJmMzcyNDcwYTI5XkEyXkFqcGdeQXVyODk2ODI3MTU@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Munna Bhai M.B.B.S.</span>
+                            <p class="movie-list-item-desc">
+A gangster sets out to fulfill his father's dream of becoming a doctor.</p>
+                            <button class="movie-list-item-button"><a href="Munna Bhai M.B.B.S..html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BOTcwMzdiMWItMjZlOS00MzAzLTg5OTItNTA4OGYyMjBhMmRiXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY209_CR3,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">A Wednesday</span>
+                            <p class="movie-list-item-desc">
+A retiring police officer reminisces about the most astounding day of his career. About a case that was never filed but continues to haunt him in his memories - the case of a man and a Wednesday.</p>
+                            <button class="movie-list-item-button"><a href="A Wednesday.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNGVkODBlYmUtNTMzYi00MjEwLWI3YWUtODNlNjhkMTg4OWJiXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Andaz Apna Apna</span>
+                            <p class="movie-list-item-desc">
+Two slackers competing for the affections of an heiress inadvertently become her protectors from an evil criminal.</p>
+                            <button class="movie-list-item-button"><a href="Andaz Apna Apna.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BOWQ0YTUzYzItYjI0MC00OTZmLWE1MWQtY2EzMzU2MTlmMmJjXkEyXkFqcGdeQXVyMDkwNTkwNg@@._V1_UY209_CR9,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Sholay</span>
+                            <p class="movie-list-item-desc">
+After his family is murdered by a notorious and ruthless bandit, a former police officer enlists the services of two outlaws to capture the bandit.</p>
+                            <button class="movie-list-item-button"><a href="Sholay.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMTY1Nzg4MjcwN15BMl5BanBnXkFtZTcwOTc1NTk1OQ@@._V1_UY209_CR2,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Bhaag Milkha Bhaag</span>
+                            <p class="movie-list-item-desc">
+The truth behind the ascension of Milkha Singh, who was scarred by of the India-Pakistan partition.</p>
+                            <button class="movie-list-item-button"><a href="Bhaag Milkha Bhaag.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNDExMTBlZTYtZWMzYi00NmEwLWEzZGYtOTA1MDhmNTc0ODZkXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Hera Pheri</span>
+                            <p class="movie-list-item-desc">
+Three unemployed men look for answers to all their money problems - but when their opportunity arrives, will they know what to do with it?</p>
+                            <button class="movie-list-item-button"><a href="Hera Pheri.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNzgxMzExMzUwNV5BMl5BanBnXkFtZTcwMDc2MjUwNA@@._V1_UY209_CR2,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Udaan</span>
+                            <p class="movie-list-item-desc">
+Expelled from his school, a 16-year old boy returns home to his abusive and oppressive father.</p>
+                            <button class="movie-list-item-button"><a href="Udaan.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMTQ1NDI0NzkyOF5BMl5BanBnXkFtZTcwNzAyNzE2Nw@@._V1_UY209_CR2,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Kahaani</span>
+                            <p class="movie-list-item-desc">
+A pregnant woman's search for her missing husband takes her from London to Kolkata, but everyone she questions denies having ever met him.</p>
+                            <button class="movie-list-item-button"><a href="Kahaani.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNDQ1OTNmMTEtYjU1ZC00ZjA3LWE3ZDQtYjI2MjQ4YmQ0NjZkXkEyXkFqcGdeQXVyMTUyNjc3NDQ4._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Black</span>
+                            <p class="movie-list-item-desc">
+The cathartic tale of a young woman who can't see, hear, or speak, and the teacher who brings a ray of light into her dark world.</p>
+                            <button class="movie-list-item-button"><a href="Black.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMTUzODMyNzk4NV5BMl5BanBnXkFtZTgwNTk1NTYyNTM@._V1_UY209_CR8,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Chak De! India</span>
+                            <p class="movie-list-item-desc">
+Kabir Khan, the coach of the Indian Women's National Hockey Team, dreams of making his all-girls team emerge victorious against all odds.</p>
+                            <button class="movie-list-item-button"><a href="Chak De! India.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BZTg2YWFkOGMtYWExMy00YmFiLTk2YjctNTAzZDk5MjdhMzdlXkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_UY209_CR2,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Khosla Ka Ghosla!</span>
+                            <p class="movie-list-item-desc">
+A Delhi-based retired middle-class man tries half-heartedly to get his land back from a swindling property dealer with the help of his sons and their friends.</p>
+                            <button class="movie-list-item-button"><a href="Khosla Ka Ghosla!.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNTU1ZjQwNDAtZDAwMC00OTcyLTg4MDUtOTUwYTU4N2M4YTgxXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UY209_CR6,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Jo Jeeta Wohi Sikandar</span>
+                            <p class="movie-list-item-desc">
+A rich brat and a poor chap try to woo a girl, with their rivalry culminating in the most prestigious college event - the marathon cycle race.</p>
+                            <button class="movie-list-item-button"><a href="Jo Jeeta Wohi Sikandar.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BZGFmMjM5OWMtZTRiNC00ODhlLThlYTItYTcyZDMyYmMyYjFjXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UY209_CR2,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Zindagi Na Milegi Dobara</span>
+                            <p class="movie-list-item-desc">
+Three friends decide to turn their fantasy vacation into reality after one of their friends gets engaged.</p>
+                            <button class="movie-list-item-button"><a href="Zindagi Na Milegi Dobara.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNTgwODM5OTMzN15BMl5BanBnXkFtZTcwMTA3NzI1Nw@@._V1_UY209_CR2,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Paan Singh Tomar</span>
+                            <p class="movie-list-item-desc">
+The story of Paan Singh Tomar, an Indian athlete and seven-time national steeplechase champion who becomes one of the most feared dacoits in Chambal Valley after his retirement.</p>
+                            <button class="movie-list-item-button"><a href="Paan Singh Tomar.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMDQ2ZmE2NTMtZDE3NC00YzFjLWJhNmEtMDEzMTI5ZjU2ZGM0XkEyXkFqcGdeQXVyNTkzNDQ4ODc@._V1_UY209_CR8,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Dilwale Dulhania Le Jayenge</span>
+                            <p class="movie-list-item-desc">
+When Raj meets Simran in Europe, it isn't love at first sight but when Simran moves to India for an arranged marriage, love makes its presence felt.</p>
+                            <button class="movie-list-item-button"><a href="Dilwale Dulhania Le Jayenge.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BY2NmNjlhYzQtMWU5MS00YTVmLWIyOWEtOGFmY2ZjMjY2ZGRkXkEyXkFqcGdeQXVyMTMxMTY0OTQ@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Omkara</span>
+                            <p class="movie-list-item-desc">
+A politically-minded enforcer's misguided trust in his lieutenant leads him to suspect his wife of infidelity in this adaptation of Shakespeare's 'Othello'.</p>
+                            <button class="movie-list-item-button"><a href="Omkara.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BN2ZmMDMwODgtMzA5MS00MGU0LWEyYTgtYzQ5MmQzMzU2NTVkXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY209_CR2,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Lage Raho Munna Bhai</span>
+                            <p class="movie-list-item-desc">
+Munna Bhai embarks on a journey with Mahatma Gandhi in order to fight against a corrupt property dealer.</p>
+                            <button class="movie-list-item-button"><a href="Lage Raho Munna Bhai.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYmIzZDQ0ZWItZGJjNC00YTllLWIzYjktM2U3ZThmNDFmMDNkXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY209_CR2,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Iqbal</span>
+                            <p class="movie-list-item-desc">
+Iqbal, the deaf and mute son of a farmer, has a passion for the game of cricket and seeks the tutelage of a washed-up, alcoholic ex-player.</p>
+                            <button class="movie-list-item-button"><a href="Iqbal.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMTUwMzc1NjIzMV5BMl5BanBnXkFtZTgwODUyMTIxMTE@._V1_UY209_CR1,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Lunchbox</span>
+                            <p class="movie-list-item-desc">
+A mistaken delivery in Mumbai's famously efficient lunchbox delivery system connects a young housewife to an older man in the dusk of his life as they build a fantasy world together through notes in the lunchbox.</p>
+                            <button class="movie-list-item-button"><a href="The Lunchbox.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYWRjMDlmNGYtOGFhYy00ZWU4LTk3MzEtOTI4ZTgxN2Y5NGNkXkEyXkFqcGdeQXVyNzU3Nzk4MDQ@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Black Friday</span>
+                            <p class="movie-list-item-desc">
+A film about the investigations following the 1993 serial Bombay bomb blasts, told through the different stories of the people involved --police, conspirators, victims, middlemen.</p>
+                            <button class="movie-list-item-button"><a href="Black Friday.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNjVkNWVlMjQtMzJjOS00MDY3LWI4YjgtYjI5NTg1M2U3YzRlXkEyXkFqcGdeQXVyNzE0MzIyOTI@._V1_UY209_CR4,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Company</span>
+                            <p class="movie-list-item-desc">
+A small-time gangster named Chandu teams up with Malik, a low-level enforcer for a criminal syndicate. Together they eliminate all their enemies, becoming the most feared gangsters in Mumbai.</p>
+                            <button class="movie-list-item-button"><a href="Company.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYjBhYmQxNTgtNDU2Ni00NGQzLTg5MzQtMDdkY2I3MzA1MTc0XkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Gol Maal</span>
+                            <p class="movie-list-item-desc">
+A man's simple lie to secure his job escalates into more complex lies when his orthodox boss gets suspicious.</p>
+                            <button class="movie-list-item-button"><a href="Gol Maal.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYjU1NjczNzYtYmFjOC00NzkxLTg4YTUtNGYzMTk3NTU0ZDE3XkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UY209_CR2,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Dev.D</span>
+                            <p class="movie-list-item-desc">
+After breaking up with his childhood sweetheart, a young man finds solace in drugs. Meanwhile, a teenage girl is caught in the world of prostitution. Will they be destroyed, or will they find redemption?</p>
+                            <button class="movie-list-item-button"><a href="Dev.D.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMDE0Y2NhYjEtNWM3MS00MzFiLTlkODctYmViY2Q4OTczYWI2XkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UY209_CR9,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Jaane Bhi Do Yaaro</span>
+                            <p class="movie-list-item-desc">
+Two photographers, who are employed by a magazine editor to expose the scandalous activities of the rich, come across corruption by a builder and accidentally photograph a murder.</p>
+                            <button class="movie-list-item-button"><a href="Jaane Bhi Do Yaaro.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYTg1MjE2YTQtMmE3ZC00NGQ2LWJiMWYtZmIxNTYzZjJmYTkwXkEyXkFqcGdeQXVyODMyODMxNDY@._V1_UY209_CR2,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">OMG: Oh My God!</span>
+                            <p class="movie-list-item-desc">
+A shopkeeper takes God to court when his shop is destroyed by an earthquake.</p>
+                            <button class="movie-list-item-button"><a href="OMG: Oh My God!.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMmM2YWQ3MzctOTk1NS00NThhLWExY2MtYjQzZGRmZTFiYWY3XkEyXkFqcGdeQXVyMjUxMTY3ODM@._V1_UY209_CR6,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Mughal-E-Azam</span>
+                            <p class="movie-list-item-desc">
+A 16th century prince falls in love with a court dancer and battles with his emperor father.</p>
+                            <button class="movie-list-item-button"><a href="Mughal-E-Azam.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYTMxYjEwYjctMjg4Ni00N2UyLThkNDEtNTY4ODExNmIzYjE5XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY209_CR3,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Gulaal</span>
+                            <p class="movie-list-item-desc">
+A law student witnesses deception, homicide, and crime after being elected as General Secretary of his college.</p>
+                            <button class="movie-list-item-button"><a href="Gulaal.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYTk3NTVhNjktYTg0OC00ODk1LWE4MjUtMDhkNTY3MTMyMTc0XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY209_CR2,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Dor</span>
+                            <p class="movie-list-item-desc">
+Two woman --different backgrounds, miles apart, and strangers to each other-- are linked by tragedy. Their new-found friendship is tested as one holds the fate of the other's husband in her hands.</p>
+                            <button class="movie-list-item-button"><a href="Dor.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYmIzYmY4MGItM2I4YS00OWZhLWFmMzQtYzI2MWY1MmM3NGU1XkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_UY209_CR2,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Jab We Met</span>
+                            <p class="movie-list-item-desc">
+A depressed wealthy businessman finds his life changing after he meets a spunky and care-free young woman.</p>
+                            <button class="movie-list-item-button"><a href="Jab We Met.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYjkzODdhZjUtMjY0YS00ODA3LTkxMDUtM2JlYTQyMWE1NTMzXkEyXkFqcGdeQXVyMzg1ODEwNQ@@._V1_UY209_CR5,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Pyaasa</span>
+                            <p class="movie-list-item-desc">
+Vijay, a talented but indigent poet, struggles for love and recognition in this selfish world.</p>
+                            <button class="movie-list-item-button"><a href="Pyaasa.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BODdhOWU3YjItM2JjYi00ODFkLWJjODgtNTU4ZWM0MTVlZGI3XkEyXkFqcGdeQXVyMTEzNzg0Mjkx._V1_UY209_CR3,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Legend of Bhagat Singh</span>
+                            <p class="movie-list-item-desc">
+The story of a young revolutionary who raised an armed resistance against the British rule in India.</p>
+                            <button class="movie-list-item-button"><a href="The Legend of Bhagat Singh.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMjZjZGM1OGQtNDgyOS00M2Y4LWI2MDgtN2JjMTM1M2U0Mzk0XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY209_CR8,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Masoom</span>
+                            <p class="movie-list-item-desc">
+A happy family goes through turbulent times because of a big mistake by one of the family members.</p>
+                            <button class="movie-list-item-button"><a href="Masoom.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMWFlMjRhZmUtNzBjNC00NTdjLTlkNjItNWZmODdhODg4ZTlhXkEyXkFqcGdeQXVyMTMxMTY0OTQ@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Salaam Bombay!</span>
+                            <p class="movie-list-item-desc">
+Young Krishna struggles to survive among the drug dealers, pimps, and prostitutes in the back alleys and gutters of India.</p>
+                            <button class="movie-list-item-button"><a href="Salaam Bombay!.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMTMwMjk3MzA2OF5BMl5BanBnXkFtZTcwNjU2ODgzMQ@@._V1_UY209_CR4,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Satya</span>
+                            <p class="movie-list-item-desc">
+An innocent man is embroiled in underworld after being falsely charged and sets out to punish the perpetrators who subjected his life to misery.</p>
+                            <button class="movie-list-item-button"><a href="Satya.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYWNlODE1ZTEtOTQ5MS00N2QwLTllNjItZDQ2Y2UzMmU5YmI2XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY209_CR9,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Vicky Donor</span>
+                            <p class="movie-list-item-desc">
+A man is brought in by an infertility doctor to supply him with his sperm, where he becomes the biggest sperm donor for his clinic.</p>
+                            <button class="movie-list-item-button"><a href="Vicky Donor.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BY2Y0NjY5ZTctZWMzNC00MDQ4LTkyMWUtOGZkMzk4NWNhYWI5XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY209_CR2,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Lakshya</span>
+                            <p class="movie-list-item-desc">
+An aimless, jobless, irresponsible grown man joins the army and matures into a battlefield hero.</p>
+                            <button class="movie-list-item-button"><a href="Lakshya.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYmY3MDFjMWQtNWJkMC00NWIyLTkxZWYtNmNhZjUxOGJmNTJlXkEyXkFqcGdeQXVyMTYyNjAzOTUx._V1_UY209_CR8,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Vaastav: The Reality</span>
+                            <p class="movie-list-item-desc">
+Consequences force an innocent man to get involved in crime after making an error.</p>
+                            <button class="movie-list-item-button"><a href="Vaastav: The Reality.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYmVjNDIxODAtNWZiZi00ZDBlLWJmOTUtNDNjMGExNTViMzE1XkEyXkFqcGdeQXVyNTE0MDc0NTM@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Kal Ho Naa Ho</span>
+                            <p class="movie-list-item-desc">
+Naina, an introverted, perpetually depressed girl's life changes when she meets Aman. But Aman has a secret of his own which changes their lives forever. Embroiled in all this is Rohit, Naina's best friend who conceals his love for her.</p>
+                            <button class="movie-list-item-button"><a href="Kal Ho Naa Ho.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNjA1MjM2NTM3MV5BMl5BanBnXkFtZTcwODIyMjk5MQ@@._V1_UY209_CR3,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Oye Lucky! Lucky Oye!</span>
+                            <p class="movie-list-item-desc">
+Lovinder Singh, a thief now in custody and facing trial, reflects on his life of crime while the press reflect on how he managed to get away with so much before being arrested.</p>
+                            <button class="movie-list-item-button"><a href="Oye Lucky! Lucky Oye!.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNDQwMWE0ZDItOTBjOC00MzJhLWIwNWYtYzU4ODJkMjA3MTI2XkEyXkFqcGdeQXVyMTcyNDY1NDgw._V1_UY209_CR3,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Sarfarosh</span>
+                            <p class="movie-list-item-desc">
+After his brother is killed and father severely injured by terrorists, a young med student quits his studies to join the Indian Police Service to wipe out the terrorists.</p>
+                            <button class="movie-list-item-button"><a href="Sarfarosh.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYjRjOWViZTgtYjA4Ny00MWJiLTkxYzktMzdlOGRmMWYwOTdjXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UY209_CR8,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Gangaajal</span>
+                            <p class="movie-list-item-desc">
+An IPS officer motivates and leads a dysfunctional, corrupt police force of Tezpur to fight against the corrupt politician.</p>
+                            <button class="movie-list-item-button"><a href="Gangaajal.html">VIEW</a></button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-caret-right arrow"></i>
+                </div>
+            <div class="featured-content" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#04033c),url('img/open.jpg');">
+                <p class="featured-desc">"We're not convicting – just denying."
+                </p>
+                    <button class="featured-button"><a href="https://www.youtube.com/watch?v=uYPbbksJxIg">WATCH TRAILER</a></button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">HOLLYWOOD</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list"> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY209_CR3,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Godfather</span>
+                            <p class="movie-list-item-desc">
+Don Vito Corleone, head of a mafia family, decides to hand over his empire to his youngest son Michael. However, his decision unintentionally puts the lives of his loved ones in grave danger.</p>
+                            <button class="movie-list-item-button"><a href="The Godfather.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Shawshank Redemption</span>
+                            <p class="movie-list-item-desc">
+Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.</p>
+                            <button class="movie-list-item-button"><a href="The Shawshank Redemption.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNDE4OTMxMTctNmRhYy00NWE2LTg3YzItYTk3M2UwOTU5Njg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Schindler's List</span>
+                            <p class="movie-list-item-desc">
+In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.</p>
+                            <button class="movie-list-item-button"><a href="Schindler's List.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYjRmODkzNDItMTNhNi00YjJlLTg0ZjAtODlhZTM0YzgzYThlXkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_UY209_CR1,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Raging Bull</span>
+                            <p class="movie-list-item-desc">
+The life of boxer Jake LaMotta, whose violence and temper that led him to the top in the ring destroyed his life outside of it.</p>
+                            <button class="movie-list-item-button"><a href="Raging Bull.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BY2IzZGY2YmEtYzljNS00NTM5LTgwMzUtMzM1NjQ4NGI0OTk0XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Casablanca</span>
+                            <p class="movie-list-item-desc">
+A cynical expatriate American cafe owner struggles to decide whether or not to help his former lover and her fugitive husband escape the Nazis in French Morocco.</p>
+                            <button class="movie-list-item-button"><a href="Casablanca.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYjBiOTYxZWItMzdiZi00NjlkLWIzZTYtYmFhZjhiMTljOTdkXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Citizen Kane</span>
+                            <p class="movie-list-item-desc">
+Following the death of publishing tycoon Charles Foster Kane, reporters scramble to uncover the meaning of his final utterance: 'Rosebud.'</p>
+                            <button class="movie-list-item-button"><a href="Citizen Kane.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYjUyZWZkM2UtMzYxYy00ZmQ3LWFmZTQtOGE2YjBkNjA3YWZlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Gone with the Wind</span>
+                            <p class="movie-list-item-desc">
+A sheltered and manipulative Southern belle and a roguish profiteer face off in a turbulent romance as the society around them crumbles with the end of slavery and is rebuilt during the Civil War and Reconstruction periods.</p>
+                            <button class="movie-list-item-button"><a href="Gone with the Wind.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BY2NjNDU1ZjctN2VhZi00Nzc5LTljNmItMTZiOTg1ODkwYjgwXkEyXkFqcGdeQXVyNTkxMzEwMzU@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Wizard of Oz</span>
+                            <p class="movie-list-item-desc">
+Young Dorothy Gale and her dog Toto are swept away by a tornado from their Kansas farm to the magical Land of Oz, and embark on a quest with three new friends to see the Wizard, who can return her to her home and fulfill the others' wishes.</p>
+                            <button class="movie-list-item-button"><a href="The Wizard of Oz.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BZjA0OWVhOTAtYWQxNi00YzNhLWI4ZjYtNjFjZTEyYjJlNDVlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY209_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">One Flew Over the Cuckoo's Nest</span>
+                            <p class="movie-list-item-desc">
+In the Fall of 1963, a Korean War veteran and criminal pleads insanity and is admitted to a mental institution, where he rallies up the scared patients against the tyrannical nurse.</p>
+                            <button class="movie-list-item-button"><a href="One Flew Over the Cuckoo's Nest.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYWY5ZjhjNGYtZmI2Ny00ODM0LWFkNzgtZmI1YzA2N2MxMzA0XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_UY209_CR2,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Lawrence of Arabia</span>
+                            <p class="movie-list-item-desc">
+The story of T.E. Lawrence, the English officer who successfully united and led the diverse, often warring, Arab tribes during World War I in order to fight the Turks.</p>
+                            <button class="movie-list-item-button"><a href="Lawrence of Arabia.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYTE4ODEwZDUtNDFjOC00NjAxLWEzYTQtYTI1NGVmZmFlNjdiL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Vertigo</span>
+                            <p class="movie-list-item-desc">
+A former San Francisco police detective juggles wrestling with his personal demons and becoming obsessed with the hauntingly beautiful woman he has been hired to trail, who may be deeply disturbed.</p>
+                            <button class="movie-list-item-button"><a href="Vertigo.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNTQwNDM1YzItNDAxZC00NWY2LTk0M2UtNDIwNWI5OGUyNWUxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY209_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Psycho</span>
+                            <p class="movie-list-item-desc">
+A Phoenix secretary embezzles $40,000 from her employer's client, goes on the run and checks into a remote motel run by a young man under the domination of his mother.</p>
+                            <button class="movie-list-item-button"><a href="Psycho.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMWMwMGQzZTItY2JlNC00OWZiLWIyMDctNDk2ZDQ2YjRjMWQ0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY209_CR3,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Godfather Part II</span>
+                            <p class="movie-list-item-desc">
+The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.</p>
+                            <button class="movie-list-item-button"><a href="The Godfather Part II.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BY2I0MWFiZDMtNWQyYy00Njk5LTk3MDktZjZjNTNmZmVkYjkxXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">On the Waterfront</span>
+                            <p class="movie-list-item-desc">
+An ex-prize fighter turned New Jersey longshoreman struggles to stand up to his corrupt union bosses, including his older brother, as he starts to connect with the grieving sister of one of the syndicate's victims.</p>
+                            <button class="movie-list-item-button"><a href="On the Waterfront.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMTU0NTkyNzYwMF5BMl5BanBnXkFtZTgwMDU0NDk5MTI@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Sunset Blvd.</span>
+                            <p class="movie-list-item-desc">
+A screenwriter develops a dangerous relationship with a faded film star determined to make a triumphant return.</p>
+                            <button class="movie-list-item-button"><a href="Sunset Blvd..html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY209_CR2,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Forrest Gump</span>
+                            <p class="movie-list-item-desc">
+The history of the United States from the 1950s to the '70s unfolds from the perspective of an Alabama man with an IQ of 75, who yearns to be reunited with his childhood sweetheart.</p>
+                            <button class="movie-list-item-button"><a href="Forrest Gump.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYThiZTY5MTAtODgwNS00OGNjLThjYzItOTcxYmYxMGY5MzBjXkEyXkFqcGdeQXVyNjc5NjEzNA@@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Sound of Music</span>
+                            <p class="movie-list-item-desc">
+A young novice is sent by her convent in 1930s Austria to become a governess to the seven children of a widowed naval officer.</p>
+                            <button class="movie-list-item-button"><a href="The Sound of Music.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMWU4N2FjNzYtNTVkNC00NzQ0LTg0MjAtYTJlMjFhNGUxZDFmXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">12 Angry Men</span>
+                            <p class="movie-list-item-desc">
+The jury in a New York City murder trial is frustrated by a single member whose skeptical caution forces them to more carefully consider the evidence before jumping to a hasty verdict.</p>
+                            <button class="movie-list-item-button"><a href="12 Angry Men.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMTM0NDAxOTI5MF5BMl5BanBnXkFtZTcwNjI4Mjg3NA@@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">West Side Story</span>
+                            <p class="movie-list-item-desc">
+Two youngsters from rival New York City gangs fall in love, but tensions between their respective friends build toward tragedy.</p>
+                            <button class="movie-list-item-button"><a href="West Side Story.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BOTA5NjhiOTAtZWM0ZC00MWNhLThiMzEtZDFkOTk2OTU1ZDJkXkEyXkFqcGdeQXVyMTA4NDI1NTQx._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">
+Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.</p>
+                            <button class="movie-list-item-button"><a href="Star Wars.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMmNlYzRiNDctZWNhMi00MzI4LThkZTctMTUzMmZkMmFmNThmXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY209_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">2001: A Space Odyssey</span>
+                            <p class="movie-list-item-desc">
+After uncovering a mysterious artifact buried beneath the Lunar surface, a spacecraft is sent to Jupiter to find its origins: a spacecraft manned by two men and the supercomputer HAL 9000.</p>
+                            <button class="movie-list-item-button"><a href="2001: A Space Odyssey.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMTQ2ODFlMDAtNzdhOC00ZDYzLWE3YTMtNDU4ZGFmZmJmYTczXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">E.T. the Extra-Terrestrial</span>
+                            <p class="movie-list-item-desc">
+A troubled child summons the courage to help a friendly alien escape from Earth and return to his home planet.</p>
+                            <button class="movie-list-item-button"><a href="E.T. the Extra-Terrestrial.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY209_CR1,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Silence of the Lambs</span>
+                            <p class="movie-list-item-desc">
+A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.</p>
+                            <button class="movie-list-item-button"><a href="The Silence of the Lambs.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMjJkMDZhYzItZTFhMi00ZGI4LThlNTAtZDNlYmEwNjFkNDYzXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Chinatown</span>
+                            <p class="movie-list-item-desc">
+A private detective hired to expose an adulterer in 1930s Los Angeles finds himself caught up in a web of deceit, corruption, and murder.</p>
+                            <button class="movie-list-item-button"><a href="Chinatown.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BOGY5NmNlMmQtYzRlYy00NGQ5LWFkYjYtNzExZmQyMTg0ZDA0XkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Bridge on the River Kwai</span>
+                            <p class="movie-list-item-desc">
+British POWs are forced to build a railway bridge across the river Kwai for their Japanese captors in occupied Burma, not knowing that the allied forces are planning a daring commando raid through the jungle to destroy it.</p>
+                            <button class="movie-list-item-button"><a href="The Bridge on the River Kwai.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BZDRjNGViMjQtOThlMi00MTA3LThkYzQtNzJkYjBkMGE0YzE1XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_UY209_CR1,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Singin' in the Rain</span>
+                            <p class="movie-list-item-desc">
+A silent film star falls for a chorus girl just as he and his delusionally jealous screen partner are trying to make the difficult transition to talking pictures in 1920s Hollywood.</p>
+                            <button class="movie-list-item-button"><a href="Singin' in the Rain.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BZjc4NDZhZWMtNGEzYS00ZWU2LThlM2ItNTA0YzQ0OTExMTE2XkEyXkFqcGdeQXVyNjUwMzI2NzU@._V1_UY209_CR2,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">It's a Wonderful Life</span>
+                            <p class="movie-list-item-desc">
+An angel is sent from Heaven to help a desperately frustrated businessman by showing him what life would have been like if he had never existed.</p>
+                            <button class="movie-list-item-button"><a href="It's a Wonderful Life.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMWMxYjZkOWUtM2FjMi00MmI1LThkNzQtNTM5Y2E2ZGQ2NGFhXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb</span>
+                            <p class="movie-list-item-desc">
+An insane American general orders a bombing attack on the Soviet Union, triggering a path to nuclear holocaust that a war room full of politicians and generals frantically tries to stop.</p>
+                            <button class="movie-list-item-button"><a href="Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNzAyOGIxYjAtMGY2NC00ZTgyLWIwMWEtYzY0OWQ4NDFjOTc5XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Some Like It Hot</span>
+                            <p class="movie-list-item-desc">
+After two male musicians witness a mob hit, they flee the state in an all-female band disguised as women, but further complications set in.</p>
+                            <button class="movie-list-item-button"><a href="Some Like It Hot.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNjgxY2JiZDYtZmMwOC00ZmJjLWJmODUtMTNmNWNmYWI5ODkwL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Ben-Hur</span>
+                            <p class="movie-list-item-desc">
+After a Jewish prince is betrayed and sent into slavery by a Roman friend in 1st-century Jerusalem, he regains his freedom and comes back for revenge.</p>
+                            <button class="movie-list-item-button"><a href="Ben-Hur.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYmQyNTA1ZGItNjZjMi00NzFlLWEzMWEtNWMwN2Q2MjJhYzEyXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Apocalypse Now</span>
+                            <p class="movie-list-item-desc">
+A U.S. Army officer serving in Vietnam is tasked with assassinating a renegade Special Forces Colonel who sees himself as a god.</p>
+                            <button class="movie-list-item-button"><a href="Apocalypse Now.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNWJlNzUzNGMtYTAwMS00ZjI2LWFmNWQtODcxNWUxODA5YmU1XkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Amadeus</span>
+                            <p class="movie-list-item-desc">
+The life, success and troubles of Wolfgang Amadeus Mozart, as told by Antonio Salieri, the contemporaneous composer who was deeply jealous of Mozart's talent and claimed to have murdered him.</p>
+                            <button class="movie-list-item-button"><a href="Amadeus.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY209_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Lord of the Rings: The Return of the King</span>
+                            <p class="movie-list-item-desc">
+Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.</p>
+                            <button class="movie-list-item-button"><a href="The Lord of the Rings: The Return of the King.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY209_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Gladiator</span>
+                            <p class="movie-list-item-desc">
+A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.</p>
+                            <button class="movie-list-item-button"><a href="Gladiator.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY209_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Titanic</span>
+                            <p class="movie-list-item-desc">
+A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.</p>
+                            <button class="movie-list-item-button"><a href="Titanic.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BM2U3YzkxNGMtYWE0YS00ODk0LTk1ZGEtNjk3ZTE0MTk4MzJjXkEyXkFqcGdeQXVyNDk0MDg4NDk@._V1_UY209_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">From Here to Eternity</span>
+                            <p class="movie-list-item-desc">
+At a U.S. Army base in 1941 Hawaii, a private is cruelly punished for not boxing on his unit's team, while his commanding officer's wife and top aide begin a tentative affair.</p>
+                            <button class="movie-list-item-button"><a href="From Here to Eternity.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BZjhkMDM4MWItZTVjOC00ZDRhLThmYTAtM2I5NzBmNmNlMzI1XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_UY209_CR1,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Saving Private Ryan</span>
+                            <p class="movie-list-item-desc">
+Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.</p>
+                            <button class="movie-list-item-button"><a href="Saving Private Ryan.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BODM3YWY4NmQtN2Y3Ni00OTg0LWFhZGQtZWE3ZWY4MTJlOWU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Unforgiven</span>
+                            <p class="movie-list-item-desc">
+Retired Old West gunslinger William Munny reluctantly takes on one last job, with the help of his old partner Ned Logan and a young man, The "Schofield Kid."</p>
+                            <button class="movie-list-item-button"><a href="Unforgiven.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNTU2ODkyY2MtMjU1NC00NjE1LWEzYjgtMWQ3MzRhMTE0NDc0XkEyXkFqcGdeQXVyMjM4MzQ4OTQ@._V1_UY209_CR1,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Raiders of the Lost Ark</span>
+                            <p class="movie-list-item-desc">
+In 1936, archaeologist and adventurer Indiana Jones is hired by the U.S. government to find the Ark of the Covenant before the Nazis can obtain its awesome powers.</p>
+                            <button class="movie-list-item-button"><a href="Raiders of the Lost Ark.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNTBkMjg2MjYtYTZjOS00ODQ0LTg0MDEtM2FiNmJmOGU1NGEwXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Rocky</span>
+                            <p class="movie-list-item-desc">
+A small-time Philadelphia boxer gets a supremely rare chance to fight the world heavyweight champion in a bout in which he strives to go the distance for his self-respect.</p>
+                            <button class="movie-list-item-button"><a href="Rocky.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNzk2M2Y3MzYtNGMzMi00Y2FjLTkwODQtNmExYWU3ZWY3NzExXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">A Streetcar Named Desire</span>
+                            <p class="movie-list-item-desc">
+Disturbed Blanche DuBois moves in with her sister in New Orleans and is tormented by her brutish brother-in-law while her reality crumbles around her.</p>
+                            <button class="movie-list-item-button"><a href="A Streetcar Named Desire.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYjQ4ZDA4NGMtMTkwYi00NThiLThhZDUtZTEzNTAxOWYyY2E4XkEyXkFqcGdeQXVyMjUxODE0MDY@._V1_UY209_CR1,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Philadelphia Story</span>
+                            <p class="movie-list-item-desc">
+When a rich woman's ex-husband and a tabloid-type reporter turn up just before her planned remarriage, she begins to learn the truth about herself.</p>
+                            <button class="movie-list-item-button"><a href="The Philadelphia Story.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNmVmYzcwNzMtMWM1NS00MWIyLThlMDEtYzUwZDgzODE1NmE2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">To Kill a Mockingbird</span>
+                            <p class="movie-list-item-desc">
+Atticus Finch, a widowed lawyer in Depression-era Alabama, defends a Black man against an undeserved rape charge, and tries to educate his young children against prejudice.</p>
+                            <button class="movie-list-item-button"><a href="To Kill a Mockingbird.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMzFkNGM0YTUtZjY5Ny00NzBkLWE1NTAtYzUxNjUyZmJlODMwL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">An American in Paris</span>
+                            <p class="movie-list-item-desc">
+Three friends struggle to find work in Paris. Things become more complicated when two of them fall in love with the same woman.</p>
+                            <button class="movie-list-item-button"><a href="An American in Paris.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BY2RmNTRjYzctODI4Ni00MzQyLWEyNTAtNjU0N2JkMTNhNjJkXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Best Years of Our Lives</span>
+                            <p class="movie-list-item-desc">
+Three World War II veterans, two of them traumatized or disabled, return home to the American midwest to discover that they and their families have been irreparably changed.</p>
+                            <button class="movie-list-item-button"><a href="The Best Years of Our Lives.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNGM0ZTU3NmItZmRmMy00YWNjLWEzMWItYzg3MzcwZmM5NjdiXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_UY209_CR6,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">My Fair Lady</span>
+                            <p class="movie-list-item-desc">
+In 1910s London, snobbish phonetics professor Henry Higgins agrees to a wager that he can make crude flower girl, Eliza Doolittle, presentable in high society.</p>
+                            <button class="movie-list-item-button"><a href="My Fair Lady.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMTY3MjM1Mzc4N15BMl5BanBnXkFtZTgwODM0NzAxMDE@._V1_UY209_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">A Clockwork Orange</span>
+                            <p class="movie-list-item-desc">
+In the future, a sadistic gang leader is imprisoned and volunteers for a conduct-aversion experiment, but it doesn't go as planned.</p>
+                            <button class="movie-list-item-button"><a href="A Clockwork Orange.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNzdmZTk4MTktZmExNi00OWEwLTgxZDctNTE4NWMwNjc1Nzg2XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Doctor Zhivago</span>
+                            <p class="movie-list-item-desc">
+The life of a Russian physician and poet who, although married to another, falls in love with a political activist's wife and experiences hardship during World War I and then the October Revolution.</p>
+                            <button class="movie-list-item-button"><a href="Doctor Zhivago.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYWQ3YWJiMDEtMDBhNS00YjY1LTkzNmEtY2U4Njg4MjQ3YWE3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Searchers</span>
+                            <p class="movie-list-item-desc">
+An American Civil War veteran embarks on a years-long journey to rescue his niece from the Comanches after the rest of his brother's family is massacred in a raid on their Texas farm.</p>
+                            <button class="movie-list-item-button"><a href="The Searchers.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Jaws</span>
+                            <p class="movie-list-item-desc">
+When a killer shark unleashes chaos on a beach community off Cape Cod, it's up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down.</p>
+                            <button class="movie-list-item-button"><a href="Jaws.html">VIEW</a></button>
+                        </div>
+                </div>
+                    <i class="fa-solid fa-caret-right arrow"></i>
+                </div>
+                
+            <div class="featured-content" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#04033c),url('img/friends.jpg');">
+                <p class="featured-desc">“Well, maybe I don’t need your money. Wait, wait, I said maybe!”</p>
+                    <button class="featured-button"><a href="https://www.youtube.com/watch?v=IEEbUzffzrk">WATCH TRAILER</a></button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">SERIES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list"> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWFjMjMtNjA5ZDdiYjdiODU5XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Breaking Bad</span>
+                            <p class="movie-list-item-desc">
+A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student in order to secure his family's future.</p>
+                            <button class="movie-list-item-button"><a href="Breaking Bad.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2EzZjA1NjhlOGMxXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Game of Thrones</span>
+                            <p class="movie-list-item-desc">
+Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for a millennia.</p>
+                            <button class="movie-list-item-button"><a href="Game of Thrones.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BN2M5YWFjN2YtYzU2YS00NzBlLTgwZWUtYWQzNWFhNDkyYjg3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY209_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Mandalorian</span>
+                            <p class="movie-list-item-desc">
+The travels of a lone bounty hunter in the outer reaches of the galaxy, far from the authority of the New Republic.</p>
+                            <button class="movie-list-item-button"><a href="The Mandalorian.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY209_CR1,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Friends</span>
+                            <p class="movie-list-item-desc">
+Follows the personal and professional lives of six twenty to thirty year-old friends living in the Manhattan borough of New York City.</p>
+                            <button class="movie-list-item-button"><a href="Friends.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNmU3MjkzZWQtOTk1Ni00OTNiLWJhMmMtNmEyN2JjZjUzZDUyXkEyXkFqcGdeQXVyNDIyNjA2MTk@._V1_UY209_CR3,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Sopranos</span>
+                            <p class="movie-list-item-desc">
+New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling.</p>
+                            <button class="movie-list-item-button"><a href="The Sopranos.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMWRhYjZjOTQtOGNiNC00MTQ0LWE2MTYtMTQxYzEwNDE3NjYyXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY209_CR5,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Wonder Years</span>
+                            <p class="movie-list-item-desc">
+Kevin Arnold recalls growing up during the late 60s and early 70s; the turbulent social times make the transition from child to adult unusually interesting.</p>
+                            <button class="movie-list-item-button"><a href="The Wonder Years.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BZjZjMzQ2ZmUtZWEyZC00NWJiLWFjM2UtMzhmYzZmZDcxMzllXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY209_CR3,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Seinfeld</span>
+                            <p class="movie-list-item-desc">
+The continuing misadventures of neurotic New York City stand-up comedian Jerry Seinfeld and his equally neurotic New York City friends.</p>
+                            <button class="movie-list-item-button"><a href="Seinfeld.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNmM4ODU1MzItODYyYi00Y2U0LWFjZjItYTRhZWIwOGMyZTRhXkEyXkFqcGdeQXVyNjc2NTQ4Nzk@._V1_UY209_CR5,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">House of Cards</span>
+                            <p class="movie-list-item-desc">
+A Congressman works with his equally conniving wife to exact revenge on the people who betrayed him.</p>
+                            <button class="movie-list-item-button"><a href="House of Cards.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNzhlY2E5NDUtYjJjYy00ODg3LWFkZWQtYTVmMzU4ZWZmOWJkXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Lost</span>
+                            <p class="movie-list-item-desc">
+The survivors of a plane crash are forced to work together in order to survive on a seemingly deserted tropical island.</p>
+                            <button class="movie-list-item-button"><a href="Lost.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BZDg1OWRiMTktZDdiNy00NTZlLTg2Y2EtNWRiMTcxMGE5YTUxXkEyXkFqcGdeQXVyMTM2MDY0OTYx._V1_UY209_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Westworld</span>
+                            <p class="movie-list-item-desc">
+At the intersection of the near future and the reimagined past, waits a world in which every human appetite can be indulged without consequence.</p>
+                            <button class="movie-list-item-button"><a href="Westworld.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMDZkYmVhNjMtNWU4MC00MDQxLWE3MjYtZGMzZWI1ZjhlOWJmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY209_CR13,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Stranger Things</span>
+                            <p class="movie-list-item-desc">
+When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>
+                            <button class="movie-list-item-button"><a href="Stranger Things.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BZDA0MmM4YzUtMzYwZC00OGI2LWE0ODctNzNhNTkwN2FmNTVhXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY209_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The X Files</span>
+                            <p class="movie-list-item-desc">
+Two F.B.I. Agents, Fox Mulder the believer and Dana Scully the skeptic, investigate the strange and unexplained, while hidden forces work to impede their efforts.</p>
+                            <button class="movie-list-item-button"><a href="The X Files.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNTdkN2QwMDItMDVhNS00ZjFiLWEzNTctMzY5ODQzYWNkMDllXkEyXkFqcGdeQXVyMTMzNDExODE5._V1_UY209_CR6,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Chernobyl</span>
+                            <p class="movie-list-item-desc">
+In April 1986, an explosion at the Chernobyl nuclear power plant in the Union of Soviet Socialist Republics becomes one of the world's worst man-made catastrophes.</p>
+                            <button class="movie-list-item-button"><a href="Chernobyl.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BZDA4YmE0OTYtMmRmNS00Mzk2LTlhM2MtNjk4NzBjZGE1MmIyXkEyXkFqcGdeQXVyMTMzNDExODE5._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Better Call Saul</span>
+                            <p class="movie-list-item-desc">
+The trials and tribulations of criminal lawyer Jimmy McGill in the years leading up to his fateful run-in with Walter White and Jesse Pinkman.</p>
+                            <button class="movie-list-item-button"><a href="Better Call Saul.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNmFjODU3YzgtMGUwNC00ZGI3LWFkZjQtMjkxZDc3NmQ1MzcyXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_UY209_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Narcos</span>
+                            <p class="movie-list-item-desc">
+A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many other drug kingpins who plagued the country through the years.</p>
+                            <button class="movie-list-item-button"><a href="Narcos.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BODEwZjEzMjAtNjQxMy00Yjc4LWFlMDAtYjhjZTAxNDU3OTg3XkEyXkFqcGdeQXVyOTM2NTM4MjA@._V1_UY209_CR8,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Family Guy</span>
+                            <p class="movie-list-item-desc">
+In a wacky Rhode Island town, a dysfunctional family strives to cope with everyday life as they are thrown from one crazy scenario to another.</p>
+                            <button class="movie-list-item-button"><a href="Family Guy.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYWNkOTg0OTMtZTcyNy00MWU1LWJhZDQtYjQzMjU1NjBhYzI2XkEyXkFqcGdeQXVyOTE4NzcwNzI@._V1_UY209_CR1,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Parks and Recreation</span>
+                            <p class="movie-list-item-desc">
+The absurd antics of an Indiana town's public officials as they pursue sundry projects to make their city a better place.</p>
+                            <button class="movie-list-item-button"><a href="Parks and Recreation.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYjFkMTlkYWUtZWFhNy00M2FmLThiOTYtYTRiYjVlZWYxNmJkXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Simpsons</span>
+                            <p class="movie-list-item-desc">
+The satiric adventures of a working-class family in the misfit city of Springfield.</p>
+                            <button class="movie-list-item-button"><a href="The Simpsons.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BZmY5ZDMxODEtNWIwOS00NjdkLTkyMjktNWRjMDhmYjJjN2RmXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Wire</span>
+                            <p class="movie-list-item-desc">
+The Baltimore drug scene, as seen through the eyes of drug dealers and law enforcement.</p>
+                            <button class="movie-list-item-button"><a href="The Wire.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYTM4MmU1NWYtNzJjYy00YWFhLThjOGEtZmMxOGI1NzE0NGNiXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Rome</span>
+                            <p class="movie-list-item-desc">
+A down-to-earth account of the lives of both illustrious and ordinary Romans set in the last days of the Roman Republic.</p>
+                            <button class="movie-list-item-button"><a href="Rome.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BZjRjOTFkOTktZWUzMi00YzMyLThkMmYtMjEwNmQyNzliYTNmXkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Rick and Morty</span>
+                            <p class="movie-list-item-desc">
+The fractured domestic lives of a nihilistic mad scientist and his anxious grandson are further complicated by their inter-dimensional misadventures.</p>
+                            <button class="movie-list-item-button"><a href="Rick and Morty.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BM2Q1YzUxYTYtOTkwZC00Mjk3LTllZWQtNThjYjllZjE2OTQwXkEyXkFqcGdeQXVyOTA3MTMyOTk@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Homeland</span>
+                            <p class="movie-list-item-desc">
+A bipolar CIA operative becomes convinced a prisoner of war has been turned by al-Qaeda and is planning to carry out a terrorist attack on American soil.</p>
+                            <button class="movie-list-item-button"><a href="Homeland.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMTI3ODc2ODc0M15BMl5BanBnXkFtZTYwMjgzNjc3._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Band of Brothers</span>
+                            <p class="movie-list-item-desc">
+The story of Easy Company of the U.S. Army 101st Airborne Division and their mission in World War II Europe, from Operation Overlord to V-J Day.</p>
+                            <button class="movie-list-item-button"><a href="Band of Brothers.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BZWNlZmNiNzItYWMwNC00ODYxLThlNjYtMjU3NzlmNDQxMTY2XkEyXkFqcGdeQXVyMTA3MzQ4MTc0._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Vikings</span>
+                            <p class="movie-list-item-desc">
+Vikings transports us to the brutal and mysterious world of Ragnar Lothbrok, a Viking warrior and farmer who yearns to explore--and raid--the distant shores across the ocean.</p>
+                            <button class="movie-list-item-button"><a href="Vikings.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BZGUyNzM0M2EtMjA1Zi00MWJhLWI2ZWEtNzE3OTgyMTBkN2IzXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY209_CR13,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Boys</span>
+                            <p class="movie-list-item-desc">
+A group of vigilantes set out to take down corrupt superheroes who abuse their superpowers.</p>
+                            <button class="movie-list-item-button"><a href="The Boys.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYmMxNjM0NmItNGU1Mi00OGMwLTkzMzctZmE3YjU1ZDE4NmFjXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_UY209_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Good Place</span>
+                            <p class="movie-list-item-desc">
+Four people and their otherworldly frienemy struggle in the afterlife to define what it means to be good.</p>
+                            <button class="movie-list-item-button"><a href="The Good Place.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMTg5OTkyNzA0NF5BMl5BanBnXkFtZTcwMDYyMDUwMg@@._V1_UY209_CR1,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">24</span>
+                            <p class="movie-list-item-desc">
+Counter Terrorism Agent Jack Bauer races against the clock to subvert terrorist plots and save his nation from ultimate disaster.</p>
+                            <button class="movie-list-item-button"><a href="24.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BOTI2MjIzN2ItZDg0OS00MTlhLWIzMTMtYWI4ZTA0NGE4NDJlXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY209_CR1,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Two and a Half Men</span>
+                            <p class="movie-list-item-desc">
+A hedonistic jingle writer's free-wheeling life comes to an abrupt halt when his brother and 10-year-old nephew move into his beach-front house.</p>
+                            <button class="movie-list-item-button"><a href="Two and a Half Men.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNTVjNmEwNTMtNmQ2ZC00MGJkLWI3MDgtNzMyNTc4YjVkNTQ1L2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UY209_CR6,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">X-Men</span>
+                            <p class="movie-list-item-desc">
+A team of mutant superheroes fight for justice and human acceptance in the Marvel Comics universe.</p>
+                            <button class="movie-list-item-button"><a href="X-Men.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNmYxMjM5MzMtNTczZC00MGM3LTk2MTQtZmNmMTg4ZDI4ZTkxXkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Legion</span>
+                            <p class="movie-list-item-desc">
+David Haller is a troubled young man diagnosed as schizophrenic, but after a strange encounter he discovers special powers that will change his life forever.</p>
+                            <button class="movie-list-item-button"><a href="Legion.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMGExZjgzNzktNzUwYS00ZDgxLWFlMTktMzZhOWQxMGM0N2VkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">American Crime Story</span>
+                            <p class="movie-list-item-desc">
+An anthology series centered around America's most notorious crimes and criminals.</p>
+                            <button class="movie-list-item-button"><a href="American Crime Story.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BZjkzMmU5MjMtODllZS00OTA5LTk2ZTEtNjdhYjZhMDA5ZTRhXkEyXkFqcGdeQXVyOTA3MTMyOTk@._V1_UY209_CR7,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Dexter</span>
+                            <p class="movie-list-item-desc">
+He's smart. He's lovable. He's Dexter Morgan, America's favorite serial killer, who spends his days solving crimes and nights committing them.</p>
+                            <button class="movie-list-item-button"><a href="Dexter.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNzI5MjUyYTEtMTljZC00NGI5LWFhNWYtYjY0ZTQ5YmEzMWRjXkEyXkFqcGdeQXVyMTY3MDE5MDY1._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Walking Dead</span>
+                            <p class="movie-list-item-desc">
+Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins and must lead a group of survivors to stay alive.</p>
+                            <button class="movie-list-item-button"><a href="The Walking Dead.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMTdmZjBjZjQtY2JiNS00Y2ZlLTg2NzgtMjUzMGY2OTVmOWJiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY209_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Ted Lasso</span>
+                            <p class="movie-list-item-desc">
+American college football coach Ted Lasso heads to London to manage AFC Richmond, a struggling English Premier League soccer team.</p>
+                            <button class="movie-list-item-button"><a href="Ted Lasso.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BN2M0NTdiMGYtNmFjZi00MjIxLWI3OTUtNTdmZDRlOTNiYWU0XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_UY209_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Handmaid's Tale</span>
+                            <p class="movie-list-item-desc">
+Set in a dystopian future, a woman is forced to live as a concubine under a fundamentalist theocratic dictatorship.</p>
+                            <button class="movie-list-item-button"><a href="The Handmaid's Tale.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BZjIwNjA0NWMtZTY4MC00YWJlLWJlNDItOTM1ZTk2YzFlOWQ4XkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_UY209_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">True Detective</span>
+                            <p class="movie-list-item-desc">
+Anthology series in which police investigations unearth the personal and professional secrets of those involved, both within and outside the law.</p>
+                            <button class="movie-list-item-button"><a href="True Detective.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNzVkYWY4NzYtMWFlZi00YzkwLThhZDItZjcxYTU4ZTMzMDZmXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_UY209_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Brooklyn Nine-Nine</span>
+                            <p class="movie-list-item-desc">
+Comedy series following the exploits of Det. Jake Peralta and his diverse, lovable colleagues as they police the NYPD's 99th Precinct.</p>
+                            <button class="movie-list-item-button"><a href="Brooklyn Nine-Nine.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BZGJiNmM1NDctNWUxYS00YzE4LWJjNTgtYTJhYzE0NjFmMTMwXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Bob's Burgers</span>
+                            <p class="movie-list-item-desc">
+Bob Belcher runs a struggling burger shop with his wife and three children.</p>
+                            <button class="movie-list-item-button"><a href="Bob's Burgers.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BOTdlODM0MTAtMzRiZi00MTQxLWE0MGUtNTNjOGZjNjAzN2E0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY209_CR13,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Umbrella Academy</span>
+                            <p class="movie-list-item-desc">
+A family of former child heroes, now grown apart, must reunite to continue to protect the world.</p>
+                            <button class="movie-list-item-button"><a href="The Umbrella Academy.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BM2QyNDIzOGMtNThhNS00NmUwLWI0ZjUtZjdkN2I1OTRjZWQ3XkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_UY209_CR3,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Mr. Robot</span>
+                            <p class="movie-list-item-desc">
+Elliot, a brilliant but highly unstable young cyber-security engineer and vigilante hacker, becomes a key figure in a complex game of global dominance when he and his shadowy allies try to take down the corrupt corporation he works for.</p>
+                            <button class="movie-list-item-button"><a href="Mr. Robot.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYTYxNzc5ZmYtODcyNi00ZWUwLWExNWUtY2Y0YTlhZDBlMGU1XkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_UY209_CR2,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Boardwalk Empire</span>
+                            <p class="movie-list-item-desc">
+An Atlantic City politician plays both sides of the law by conspiring with gangsters during the Prohibition era.</p>
+                            <button class="movie-list-item-button"><a href="Boardwalk Empire.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BOWFhYjE4NzMtOWJmZi00NzEyLTg5NTctYmIxMTU1ZDIxMDAyXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_UY209_CR3,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Star Trek: The Next Generation</span>
+                            <p class="movie-list-item-desc">
+Set almost 100 years after Captain Kirk's 5-year mission, a new generation of Starfleet officers sets off in the U.S.S. Enterprise-D on its own mission to go where no one has gone before.</p>
+                            <button class="movie-list-item-button"><a href="Star Trek: The Next Generation.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BN2EyMmIyMWItZTRiYy00MmE1LTkyOTAtMTliMzYwZGJlYmFjXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Scooby Doo, Where Are You!</span>
+                            <p class="movie-list-item-desc">
+A group of teenage friends and their Great Dane (Scooby-Doo) travel in a bright green van solving strange and hilarious mysteries, while returning from or going to a regular teenage function.</p>
+                            <button class="movie-list-item-button"><a href="Scooby Doo, Where Are You!.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BODcwOTg2MDE3NF5BMl5BanBnXkFtZTgwNTUyNTY1NjM@._V1_UY209_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Daredevil</span>
+                            <p class="movie-list-item-desc">
+A blind lawyer by day, vigilante by night. Matt Murdock fights the crime of New York as Daredevil.</p>
+                            <button class="movie-list-item-button"><a href="Daredevil.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMTg3NTkwNzAxOF5BMl5BanBnXkFtZTcwMjM1NjI5MQ@@._V1_UY209_CR1,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Prison Break</span>
+                            <p class="movie-list-item-desc">
+A structural engineer installs himself in a prison he helped design, in order to save his falsely accused brother from a death sentence by breaking themselves out from the inside.</p>
+                            <button class="movie-list-item-button"><a href="Prison Break.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMDA4NjQzN2ItZDhhNC00ZjVlLWFjNTgtMTEyNDQyOGNjMDE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY209_CR1,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">House M.D.</span>
+                            <p class="movie-list-item-desc">
+Using a crack team of doctors and his wits, an antisocial maverick doctor specializing in diagnostic medicine does whatever it takes to solve puzzling cases that come his way.</p>
+                            <button class="movie-list-item-button"><a href="House M.D..html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYWQ0YTQ1ZmQtNzk1NC00NzMzLWJjNDYtMDQ0MTcxMThhYTI0XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY209_CR3,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">ER</span>
+                            <p class="movie-list-item-desc">
+The lives, loves and losses of the doctors and nurses of Chicago's County General Hospital.</p>
+                            <button class="movie-list-item-button"><a href="ER.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BY2FmZTY5YTktOWRlYy00NmIyLWE0ZmQtZDg2YjlmMzczZDZiXkEyXkFqcGdeQXVyNjg4NzAyOTA@._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">The Big Bang Theory</span>
+                            <p class="movie-list-item-desc">
+A woman who moves into an apartment across the hall from two brilliant but socially awkward physicists shows them how little they know about life outside of the laboratory.</p>
+                            <button class="movie-list-item-button"><a href="The Big Bang Theory.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BZjNhODYzZGItZWQ3Ny00ZjViLTkxMTUtM2EzN2RjYjU2OGZiXkEyXkFqcGdeQXVyMTI5MTc0OTIy._V1_UX140_CR0,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">South Park</span>
+                            <p class="movie-list-item-desc">
+Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado.</p>
+                            <button class="movie-list-item-button"><a href="South Park.html">VIEW</a></button>
+                        </div> <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BMjNlMTIxNDEtY2U3OC00ZGFlLTgxNzEtZDU3NTdiZTAzN2MxXkEyXkFqcGdeQXVyMTU1ODIwMTM1._V1_UY209_CR13,0,140,209_AL_.jpg" alt="">
+                            <span class="movie-list-item-title">Fargo</span>
+                            <p class="movie-list-item-desc">
+Various chronicles of deception, intrigue, and murder in and around frozen Minnesota. All of these tales mysteriously lead back one way or another to Fargo, North Dakota.</p>
+                            <button class="movie-list-item-button"><a href="Fargo.html">VIEW</a></button>
+                        </div>
+            </div>
+                    <i class="fa-solid fa-caret-right arrow"></i>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <script src="app2.js"></script>
+</body>
+</html>
+
+          
+
